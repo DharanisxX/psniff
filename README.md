@@ -25,8 +25,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/Goofisded/netsniff.git
-cd netsniff
+git clone https://github.com/DharanisxX/psniff.git
+cd psniff
 
 # Install dependencies
 pip install -r requirements.txt
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 sudo apt-get install libpcap-dev
 
 # Run with privileges
-sudo python3 netsniff.py -i eth0
+sudo python3 psniff.py -i eth0
 ```
 
 ### Windows Setup
@@ -47,22 +47,22 @@ sudo python3 netsniff.py -i eth0
 - Run Command Prompt as Admin:
 
 ```cmd
-python netsniff.py -i "Ethernet"
+python psniff.py -i "Ethernet"
 ```
 
 ## Usage 🚀
 
 Basic command structure:
 ```bash
-sudo python3 netsniff.py -i [interface]
+sudo python3 psniff.py -i [interface]
 ```
 Example with common interface names:
 ```bash
 # Linux wireless interface
-sudo python3 netsniff.py -i wlp2s0
+sudo python3 psniff.py -i wlp2s0
 
 # Windows Ethernet
-python netsniff.py -i "Ethernet 2"
+python psniff.py -i "Ethernet 2"
 ```
 
 ## Configuration ⚙️
@@ -74,6 +74,6 @@ CONFIG = {
     "SCAN_THRESHOLD": 15,     # SYN packets/min for alerts
     "DNS_THRESHOLD": 50,      # DNS queries/min limit
     "WHITELISTED_IPS": [],    # Trusted IP addresses
-    "LOG_FILE": "netsniff.log"# Log file path
+    "LOG_FILE": "psniff.log"# Log file path
 }
 ```
